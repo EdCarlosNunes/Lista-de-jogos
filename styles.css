@@ -1,6 +1,7 @@
 
 body {
     margin: 0;
+    font-family: 'Open Sans', sans-serif; /* Substitua 'Open Sans' pela fonte desejada */
 }
 .navbar {
     background-color: #3b3b3b; /* Cor preta */
@@ -61,7 +62,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #7FFF7F; /* Cor verde clara */
+    background-color: #64bb64; /* Cor verde clara */
     color: #fff; /* Cor do texto */
     padding: 10px 20px;
     border: none;
@@ -71,7 +72,7 @@ body {
 
 /* Quando passar o mouse sobre o botão, mude a cor de fundo */
 #addButton:hover {
-    background-color: #5FCC5F; /* Cor verde mais escura no hover */
+    background-color: #64bb64; /* Cor verde mais escura no hover */
 }
 
 .form-popup label {
@@ -88,7 +89,7 @@ body {
 }
 
 .form-popup button {
-    background-color: #7FFF7F; /* Cor verde clara */
+    background-color: #64bb64; /* Cor verde clara */
     color: #fff;
     padding: 10px;
     border: none;
@@ -97,7 +98,7 @@ body {
 }
 
 .form-popup button:hover {
-    background-color: #5FCC5F; /* Cor verde mais escura no hover */
+    background-color: #64bb64; /* Cor verde mais escura no hover */
 }
 
 .game-item {
