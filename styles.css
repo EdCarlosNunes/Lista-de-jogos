@@ -1,0 +1,143 @@
+
+body {
+    margin: 0;
+}
+.navbar {
+    background-color: #3b3b3b; /* Cor preta */
+    padding: 10px 0; /* Remova o padding superior e inferior e mantenha o padding nas laterais */
+    text-align: left;
+    margin: 0; /* Remova as margens */
+}
+
+.navbar-title {
+    color: #fff; /* Cor branca */
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+/* Estilos gerais */
+.container {
+    text-align: center;
+}
+
+/* Estilos para o botão flutuante */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: #fff;
+    max-width: 400px;
+    z-index: 1;
+}
+.show {
+    display: block;
+}
+
+/* Estilos para a lista de jogos */
+.game-list {
+    margin-top: 20px;
+}
+
+.game-item {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.game-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#addButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7FFF7F; /* Cor verde clara */
+    color: #fff; /* Cor do texto */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Quando passar o mouse sobre o botão, mude a cor de fundo */
+#addButton:hover {
+    background-color: #5FCC5F; /* Cor verde mais escura no hover */
+}
+
+.form-popup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-popup input,
+.form-popup textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form-popup button {
+    background-color: #7FFF7F; /* Cor verde clara */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-popup button:hover {
+    background-color: #5FCC5F; /* Cor verde mais escura no hover */
+}
+
+.game-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.game-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.game-info {
+    flex-grow: 1;
+}
+
+.game-info p {
+    margin: 0;
+    text-align: left;
+}
+
+/* Estilos para os botões de Editar e Excluir */
+.edit-btn,
+.delete-btn {
+    background-color: #007BFF; /* Cor azul */
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #0056b3; /* Cor azul mais escura no hover */
+}
