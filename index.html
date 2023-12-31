@@ -1,82 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
-        <title>Lista de Jogos</title>
-    </head>
-    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Meu Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 <body>
-    <div class="navbar">
-        <div class="navbar-title">Lista de Jogos Para Zerar</div>
-    </div>
 
-    <div class="container">
-        <button id="addButton" onclick="openForm()">Adicionar Jogo</button>
-        <div class="form-popup" id="myForm">
-            <form onsubmit="addGame(); return false;">
-                <label for="gameName">Nome do Jogo:</label>
-                <input type="text" id="gameName" required>
-        
-                <label for="startDate">Data de Início:</label>
-                <input type="date" id="startDate" required>
-        
-                <label for="endDate">Data de Término:</label>
-                <input type="date" id="endDate" required>
-        
-                <label for="rating">Avaliação (0-10):</label>
-                <input type="number" id="rating" min="0" max="10" required>
-        
-                <label for="description">Descrição:</label>
-                <textarea id="description" required></textarea>
-        
-                <label for="consolePlayed">Console Jogado:</label>
-                <input type="text" id="consolePlayed" required>
-        
-                <label for="imageUrl">URL da Imagem:</label>
-                <input type="url" id="imageUrl" required>
-        
-                <button type="submit">Adicionar Jogo</button>
-                <button type="button" onclick="closeForm()">Fechar</button>
-            </form>
-        </div>
-        <div id="gameList" class="game-list">
-            <!-- Lista de jogos adicionados -->
-            <!-- ... -->
-        </div>
-    </div>
+  <header>
+    <nav>
+      <div class="navbar">
+        <h1>JOGOS PARA Zerar 2024</h1>
+        <a href="#" onclick="showList('list1')">ZERAR</a>
+        <a href="#" onclick="showList('list2')">ZERADO 2024</a>
+      </div>
+    </nav>
+  </header>
 
-    <div class="form-popup" id="editForm">
-        <form onsubmit="addGame(); return false;">
-            <input type="hidden" id="editIndex"> <!-- Adiciona um campo oculto para armazenar o índice do jogo sendo editado -->
-            <label for="editGameName">Nome do Jogo:</label>
-            <input type="text" id="editGameName" required>
-    
-            <label for="editStartDate">Data de Início:</label>
-            <input type="date" id="editStartDate" required>
-    
-            <label for="editEndDate">Data de Término:</label>
-            <input type="date" id="editEndDate" required>
-    
-            <label for="editRating">Avaliação (0-10):</label>
-            <input type="number" id="editRating" min="0" max="10" required>
-    
-            <label for="editDescription">Descrição:</label>
-            <textarea id="editDescription" required></textarea>
-    
-            <label for="editConsolePlayed">Console Jogado:</label>
-            <input type="text" id="editConsolePlayed" required>
-    
-            <label for="editImageUrl">URL da Imagem:</label>
-            <input type="url" id="editImageUrl" required>
-    
-            <button type="submit">Atualizar Jogo</button>
-            <button type="button" onclick="closeEditForm()">Cancelar</button>
-        </form>
+  <main id="content">
+    <div class="column" id="list1-container">
+      <h2>ZERAR</h2>
+      <ul class="bordered-list" id="list1">
+        <li>
+          <img src="https://th.bing.com/th/id/OIP.Wzz7i5Q8wNtEWWkFqagmrQAAAA?rs=1&pid=ImgDetMain" alt="Mario" width="100" height="100">
+          <p><strong>Nome do Jogo:</strong> Mario Kart 7
+            <br><strong>Console:</strong> 3DS OLD
+            <br><strong>Tempo:</strong> 8h
+            <br><strong>Avaliação:</strong> 9
+            <br><strong>Inicio e Termino:</strong> 29/12 
+          </p>
+        </li>
+        <li>
+          <img src="https://th.bing.com/th/id/R.b5efbbccda3b6dac339f6b01f9e4d1bf?rik=9M2nfzZzZBhuTw&pid=ImgRaw&r=0" alt="Zelda" width="100" height="100">
+          <p><strong>Nome do Jogo:</strong> Donkey Kong Country Returns 3D 
+            <br><strong>Console:</strong> 3DS OLD
+            <br><strong>Tempo:</strong> 11h
+            <br><strong>Avaliação:</strong> 9
+            <br><strong>Inicio e Termino:</strong> 
+          </p>
+        </li>
+        <li>
+          <img src="https://th.bing.com/th/id/R.5b2d2b77c349ada077f1d8ff46166d75?rik=tQUhZ5HkYcWXKg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-MeiH566H8Gc%2fUprw7B77T4I%2fAAAAAAAAAqI%2f6z_TU2YMJA8%2fs1600%2fSniper%2bElite%2bV2%2bFree%2bDownload%2bFor%2bWindows%2c%2bAndroid%2c%2bMac%2c%2bIos.jpg&ehk=hxGBwiMYa6%2f6t6Mf1HVrr6wVG%2bDLgN9wLtfE%2b%2bSQcLI%3d&risl=&pid=ImgRaw&r=0" alt="Pokemon" width="100" height="100">
+          <p><strong>Nome do Jogo:</strong> Sniper Elite V2
+            <br><strong>Console:</strong> XBOX 360
+            <br><strong>Tempo:</strong> 7h
+            <br><strong>Avaliação:</strong> 
+            <br><strong>Inicio e Termino:</strong> 
+          </p>
+        </li>
+        <li>
+            <img src="https://th.bing.com/th/id/R.12ad2b9b69f16090797d509b0150ff7c?rik=GA5i3km8vyO57A&pid=ImgRaw&r=0" alt="Pokemon" width="100" height="100">
+            <p><strong>Nome do Jogo:</strong> Sniper Elite 5
+              <br><strong>Console:</strong> XBOX ONE S
+              <br><strong>Tempo:</strong> 10h
+              <br><strong>Avaliação:</strong> 
+              <br><strong>Inicio e Termino:</strong> 
+            </p>
+          </li>
+          <li>
+            <img src="https://th.bing.com/th/id/OIP.InDGQPzy5KpLqodNrKUf5wHaLH?rs=1&pid=ImgDetMain" alt="Pokemon" width="100" height="100">
+            <p><strong>Nome do Jogo:</strong> Wolfenstein: The New Order
+              <br><strong>Console:</strong> XBOX ONE S
+              <br><strong>Tempo:</strong> 15h
+              <br><strong>Avaliação:</strong> 
+              <br><strong>Inicio e Termino:</strong> 
+            </p>
+          </li>
+          <li>
+            <img src="https://image.api.playstation.com/cdn/UP1003/CUSA07384_00/DYTu7vp2EADZAfkfGN1tXH4zhiZw2Nsk.png" alt="Pokemon" width="100" height="100">
+            <p><strong>Nome do Jogo:</strong> Wolfenstein® II: The New Colossus
+              <br><strong>Console:</strong> XBOX ONE S
+              <br><strong>Tempo:</strong> 17h
+              <br><strong>Avaliação:</strong> 
+              <br><strong>Inicio e Termino:</strong> 
+            </p>
+          </li>
+          <li>
+            <img src="https://th.bing.com/th/id/OIP.5FgO14EuALEikwTxGQVm2QHaHa?rs=1&pid=ImgDetMain" alt="Pokemon" width="100" height="100">
+            <p><strong>Nome do Jogo:</strong> Medal of Honor: Airborne
+              <br><strong>Console:</strong> XBOX 360
+              <br><strong>Tempo:</strong> 8h
+              <br><strong>Avaliação:</strong> 
+              <br><strong>Inicio e Termino:</strong> 
+            </p>
+          </li>
+          <li>
+            <img src="https://th.bing.com/th/id/OIP.cSLvc-srCW8socw4YJB0OAHaHa?rs=1&pid=ImgDetMain" alt="Pokemon" width="100" height="100">
+            <p><strong>Nome do Jogo:</strong> Halo reach
+              <br><strong>Console:</strong> XBOX 360
+              <br><strong>Tempo:</strong> 12h
+              <br><strong>Avaliação:</strong> 
+              <br><strong>Inicio e Termino:</strong> 
+            </p>
+          </li>
+          <li>
+            <img src="https://th.bing.com/th/id/OIP.VapJyNywRYbsv5FN0u6HdgHaHa?rs=1&pid=ImgDetMain" alt="Pokemon" width="100" height="100">
+            <p><strong>Nome do Jogo:</strong> Call of Duty: WWII
+              <br><strong>Console:</strong> XBOX ONE S
+              <br><strong>Tempo:</strong> 9h
+              <br><strong>Avaliação:</strong> 
+              <br><strong>Inicio e Termino:</strong> 
+            </p>
+          </li>
+      </ul>
     </div>
+  
+    <div class="column" id="list2-container" style="display:none;">
+      <h2>ZERADO 2024</h2>
+      <ul class="bordered-list" id="list2">
+        <li>
+          <img src="https://example.com/supermario.jpg" alt="Super Mario" width="100" height="100">
+          <p><strong>Nome do Jogo:</strong> Mario 
+            <br><strong>Console:</strong> 3DS
+            <br><strong>Tempo:</strong> 8h
+            <br><strong>Avaliação:</strong> 10
+            <br><strong>Inicio e Termino:</strong> 29/12 a 02/01
+          </p>
+        </li>
+        <li>
+          <img src="https://example.com/metroid.jpg" alt="Metroid" width="100" height="100">
+          <p><strong>Nome do Jogo:</strong> Mario 
+            <br><strong>Console:</strong> 3DS
+            <br><strong>Tempo:</strong> 8h
+            <br><strong>Avaliação:</strong> 10
+            <br><strong>Inicio e Termino:</strong> 29/12 a 02/01
+          </p>
+        </li>
+        <li>
+          <img src="https://example.com/donkeykong.jpg" alt="Donkey Kong" width="100" height="100">
+          <p><strong>Nome do Jogo:</strong> Mario 
+            <br><strong>Console:</strong> 3DS
+            <br><strong>Tempo:</strong> 8h
+            <br><strong>Avaliação:</strong> 10
+            <br><strong>Inicio e Termino:</strong> 29/12 a 02/01
+          </p>
+        </li>
+      </ul>
+    </div>
+  </main>
+  
 
-    <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
